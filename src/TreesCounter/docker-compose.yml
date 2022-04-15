@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  treescounter:
+    image: ${DOCKER_REGISTRY-}treescounter
+    build:
+      context: .
+      dockerfile: TreesCounter/Dockerfile
